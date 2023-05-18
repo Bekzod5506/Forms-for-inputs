@@ -1,0 +1,114 @@
+.label1{
+    display: block;
+    position: relative;
+    top: 20px;
+    left: 50px;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+.span1{
+    position: absolute;
+    top: 0;
+    left: -30px;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    background-color: rgb(219, 205, 186);
+}
+.label1:hover input~.span1{
+    background-color:grey;
+}
+.label1 input:checked~.span1{
+    background-color: rgb(73, 158, 73);
+}
+.span1:after{
+    top: 8px;
+    left: 8px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+    content: "";
+    position: absolute;
+    display: none;
+}
+.label1 input:checked~.span1:after{
+    display: block;
+}
+.label1 input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+/*Bu yerdan checkbox ga still berish boshlangan*/
+.label2{
+    display: block;
+    position: relative;
+    top: 20px;
+    left: 50px;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.span2{
+    position: absolute;
+    top: 0;
+    left: -30px;
+    height: 24px;
+    width: 24px;
+    border-radius: 1px;
+    background-color: rgb(219, 205, 186);
+}
+.label2:hover input~.span2{
+    background-color: gray;
+}
+.label2 input:checked~.span2{
+    background-color: rgb(73, 158, 73);
+}
+.span2::after{
+    left: 8px;
+    top: 4px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    content: "";
+    position: absolute;
+    display: none;
+}
+.label2 input:checked~.span2:after{
+    display: block;
+}
+.label2 input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+/*bu yerdan gradient uchun still berish boshlangan*/
+.div1{
+    display: inline-block;
+    margin-left: 50px;
+    width: 400px;
+    height: 200px;
+    background-image: linear-gradient(to bottom right,red,blue,green);
+}
+.div2{
+    margin-left: 50px;
+    width: 400px;
+    height: 200px;
+    background-image: radial-gradient(yellow,blue,purple);
+    display: inline-block;
+
+}
+button{
+    margin-left: 50px;
+    margin-top: 50px;
+    width: 100px;
+    height: 40px;
+    color: white;
+    background: linear-gradient(to right,red,blue,green);
+    border-width: 0.5px;
+    border-radius: 3px;
+
+}
